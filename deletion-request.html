@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request - SMS Receipt Seeker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .contact-box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Deletion Request</h1>
+        <p><strong>App Name:</strong> SMS Receipt Seeker</p>
+        <p><strong>Last Updated:</strong> [DATE - Update this before publishing]</p>
+
+        <h2>How to Request Account Deletion</h2>
+        <p>If you wish to delete your account and all associated data from SMS Receipt Seeker, please follow these steps:</p>
+
+        <h3>Option 1: Delete Account Through the App</h3>
+        <ol>
+            <li>Open the SMS Receipt Seeker app on your device</li>
+            <li>Go to <strong>Profile</strong> or <strong>Settings</strong></li>
+            <li>Find the <strong>"Delete Account"</strong> or <strong>"Account Settings"</strong> option</li>
+            <li>Follow the on-screen instructions to confirm account deletion</li>
+            <li>Your account and data will be permanently deleted</li>
+        </ol>
+
+        <h3>Option 2: Request Deletion via Email</h3>
+        <p>If you cannot access the app or prefer to request deletion via email:</p>
+        <ol>
+            <li>Send an email to: <strong>[YOUR_EMAIL_ADDRESS]</strong></li>
+            <li>Subject line: <strong>"Account Deletion Request - SMS Receipt Seeker"</strong></li>
+            <li>Include the following information:
+                <ul>
+                    <li>Your registered email address or user ID</li>
+                    <li>Your name (as registered in the app)</li>
+                    <li>Confirmation that you want to delete your account</li>
+                </ul>
+            </li>
+            <li>We will process your request within <strong>30 days</strong> and send you a confirmation email</li>
+        </ol>
+
+        <div class="warning-box">
+            <h3>⚠️ Important: Before Deleting Your Account</h3>
+            <ul>
+                <li><strong>This action is permanent and cannot be undone</strong></li>
+                <li>All your data will be permanently deleted</li>
+                <li>You will lose access to all receipts, invoices, and SMS data stored in your account</li>
+                <li>Any active subscriptions will be cancelled</li>
+                <li>Make sure to export or download any important data before deletion</li>
+            </ul>
+        </div>
+
+        <h2>What Data Will Be Deleted</h2>
+        <p>When you delete your account, the following data will be permanently deleted:</p>
+        <ul>
+            <li><strong>User Account Information:</strong>
+                <ul>
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Profile picture</li>
+                    <li>User ID</li>
+                    <li>Account preferences and settings</li>
+                </ul>
+            </li>
+            <li><strong>SMS Data:</strong>
+                <ul>
+                    <li>All SMS messages stored in Firebase</li>
+                    <li>SMS content, sender information, and timestamps</li>
+                    <li>Extracted URLs and receipt information</li>
+                    <li>Processed receipt data</li>
+                </ul>
+            </li>
+            <li><strong>App Data:</strong>
+                <ul>
+                    <li>Generated PDF documents stored in Firebase</li>
+                    <li>Receipt organization data</li>
+                    <li>App usage history</li>
+                    <li>Subscription and trial information</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>What Data May Be Retained</h2>
+        <div class="info-box">
+            <p>For legal and operational purposes, we may retain certain information for a limited period:</p>
+            <ul>
+                <li><strong>Legal Compliance:</strong> We may retain data required by law or for legal proceedings (typically up to 7 years)</li>
+                <li><strong>Fraud Prevention:</strong> Transaction records may be retained to prevent fraud (typically up to 2 years)</li>
+                <li><strong>Backup Systems:</strong> Data in backup systems will be deleted during regular backup rotation (typically within 90 days)</li>
+            </ul>
+            <p><strong>Note:</strong> Retained data will be anonymized and not associated with your account.</p>
+        </div>
+
+        <h2>Data Deletion Timeline</h2>
+        <ul>
+            <li><strong>Immediate:</strong> Your account will be deactivated and you will lose access</li>
+            <li><strong>Within 30 days:</strong> All account data will be permanently deleted from active systems</li>
+            <li><strong>Within 90 days:</strong> Data will be removed from backup systems</li>
+            <li><strong>Legal retention:</strong> Any legally required data will be retained as specified above</li>
+        </ul>
+
+        <h2>Local Device Data</h2>
+        <p><strong>Important:</strong> Deleting your account does NOT automatically delete data stored locally on your device:</p>
+        <ul>
+            <li>PDF files saved on your device storage</li>
+            <li>Images stored locally</li>
+            <li>App cache and local preferences</li>
+        </ul>
+        <p>To remove local data, you can:</p>
+        <ul>
+            <li>Uninstall the app (this will remove all local data)</li>
+            <li>Clear app data through your device settings</li>
+            <li>Manually delete PDF files and images from your device storage</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>If you used third-party services through our app, you may need to delete data separately:</p>
+        <ul>
+            <li><strong>Google Drive:</strong> Files uploaded to your Google Drive account will remain unless you delete them manually</li>
+            <li><strong>Gmail:</strong> Emails forwarded to your Gmail account will remain in your email inbox</li>
+            <li><strong>Firebase:</strong> All data stored in Firebase will be deleted as part of account deletion</li>
+        </ul>
+
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>If you have questions about account deletion or need assistance, please contact us:</p>
+            <p><strong>Email:</strong> [YOUR_EMAIL_ADDRESS]</p>
+            <p><strong>Response Time:</strong> We will respond to your request within 30 days</p>
+        </div>
+
+        <p style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <strong>By requesting account deletion, you acknowledge that you understand the permanent nature of this action and that your data will be deleted as described above.</strong>
+        </p>
+    </div>
+</body>
+</html>
+
