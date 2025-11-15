@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SMS Receipt Seeker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .sms-declaration {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            border-left: 4px solid #4caf50;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for SMS Receipt Seeker</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> 16 November 2025</p>
+
+        <h2>Introduction</h2>
+        <p>SMS Receipt Seeker ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access or use the App.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>1. SMS Messages</h3>
+        <ul>
+            <li><strong>What we collect:</strong> We access and read SMS messages on your device to identify receipts, invoices, and related information.</li>
+            <li><strong>Why we collect it:</strong> To scan for receipt/invoice keywords and extract URLs from SMS messages containing receipt information.</li>
+            <li><strong>How we use it:</strong>
+                <ul>
+                    <li>We process SMS messages locally on your device to identify receipts and invoices</li>
+                    <li>We extract URLs and receipt information from SMS messages</li>
+                    <li>We save SMS data to Firebase (only if you are logged in) for organizing your receipts</li>
+                    <li>We may forward SMS content to your own email address or Google Drive account (only if you configure this feature)</li>
+                </ul>
+            </li>
+            <li><strong>Data storage:</strong> SMS data is stored in Firebase Firestore database, associated with your user account. SMS content is also processed locally on your device.</li>
+            <li><strong>Data sharing:</strong> SMS data is only shared with your own email/Google Drive account that you configure. We do not share SMS data with third parties.</li>
+        </ul>
+
+        <h3>2. User Account Information</h3>
+        <ul>
+            <li><strong>What we collect:</strong>
+                <ul>
+                    <li>Name (from Google Sign-In or Apple Sign-In)</li>
+                    <li>Email address (from Google Sign-In or Apple Sign-In)</li>
+                    <li>Profile picture (from Google Sign-In or Apple Sign-In)</li>
+                    <li>User ID (Firebase Authentication ID)</li>
+                </ul>
+            </li>
+            <li><strong>Why we collect it:</strong> To create and manage your user account, provide personalized services, and track your subscription/trial status.</li>
+            <li><strong>How we use it:</strong>
+                <ul>
+                    <li>To authenticate and identify you in the App</li>
+                    <li>To store your preferences and settings</li>
+                    <li>To manage your subscription and trial period</li>
+                    <li>To associate SMS data with your account</li>
+                </ul>
+            </li>
+            <li><strong>Data storage:</strong> User account information is stored in Firebase Firestore database.</li>
+            <li><strong>Data sharing:</strong> We do not share your account information with third parties except as necessary to provide the service (e.g., Firebase for authentication and storage).</li>
+        </ul>
+
+        <h3>3. Device Permissions</h3>
+        <ul>
+            <li><strong>SMS Permissions:</strong> READ_SMS, SEND_SMS, RECEIVE_SMS - Required to scan SMS messages for receipts and invoices.</li>
+            <li><strong>Storage Permissions:</strong> READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE - Required to save and read PDF files and receipts on your device.</li>
+            <li><strong>Camera Permission:</strong> CAMERA - Required to scan receipts and documents using your device camera.</li>
+            <li><strong>Photo Library Permission:</strong> READ_MEDIA_IMAGES - Required to import existing receipts and documents from your photo library.</li>
+        </ul>
+
+        <h3>4. Images and Documents</h3>
+        <ul>
+            <li><strong>What we collect:</strong> Images you select from your photo library or capture using the camera.</li>
+            <li><strong>Why we collect it:</strong> To extract text and URLs from images containing receipt information.</li>
+            <li><strong>How we use it:</strong> To process images locally on your device to extract receipt information.</li>
+            <li><strong>Data storage:</strong> Images are processed locally on your device. We do not store images on our servers unless you explicitly choose to upload them.</li>
+        </ul>
+
+        <h3>5. PDF Documents</h3>
+        <ul>
+            <li><strong>What we collect:</strong> PDF files generated from SMS messages or receipts.</li>
+            <li><strong>Why we collect it:</strong> To organize and store your receipts in PDF format.</li>
+            <li><strong>How we use it:</strong> PDFs are generated locally on your device and can be saved to your device storage or uploaded to your Google Drive account (if you configure this feature).</li>
+            <li><strong>Data storage:</strong> PDFs are stored locally on your device or in your Google Drive account (if you choose to upload them).</li>
+        </ul>
+
+        <h3>6. Device Information</h3>
+        <ul>
+            <li><strong>What we collect:</strong> Device information such as device model, operating system version, and app usage data.</li>
+            <li><strong>Why we collect it:</strong> To improve app functionality and troubleshoot issues.</li>
+            <li><strong>How we use it:</strong> For analytics and app improvement purposes.</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>We use the following third-party services that may collect information:</p>
+
+        <h3>1. Firebase (Google)</h3>
+        <ul>
+            <li><strong>Services used:</strong> Firebase Authentication, Cloud Firestore, Firebase Storage</li>
+            <li><strong>Data collected:</strong> User authentication data, user profile information, SMS data, app usage data</li>
+            <li><strong>Purpose:</strong> To provide authentication, data storage, and cloud services</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+
+        <h3>2. Google Sign-In</h3>
+        <ul>
+            <li><strong>Services used:</strong> Google Account authentication</li>
+            <li><strong>Data collected:</strong> Name, email address, profile picture</li>
+            <li><strong>Purpose:</strong> To allow you to sign in using your Google account</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h3>3. Apple Sign-In</h3>
+        <ul>
+            <li><strong>Services used:</strong> Apple ID authentication</li>
+            <li><strong>Data collected:</strong> Name, email address (if provided)</li>
+            <li><strong>Purpose:</strong> To allow you to sign in using your Apple ID</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://www.apple.com/privacy/" target="_blank">https://www.apple.com/privacy/</a></li>
+        </ul>
+
+        <h3>4. Google Drive API</h3>
+        <ul>
+            <li><strong>Services used:</strong> Google Drive file storage</li>
+            <li><strong>Data collected:</strong> PDF files and documents you choose to upload</li>
+            <li><strong>Purpose:</strong> To store your receipts and documents in your Google Drive account</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h3>5. Gmail API</h3>
+        <ul>
+            <li><strong>Services used:</strong> Gmail email forwarding</li>
+            <li><strong>Data collected:</strong> Email content (SMS receipts forwarded to your email)</li>
+            <li><strong>Purpose:</strong> To forward SMS receipts to your email address</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ol>
+            <li>Provide, maintain, and improve our services</li>
+            <li>Process and organize your SMS receipts and invoices</li>
+            <li>Authenticate and manage your user account</li>
+            <li>Send SMS receipts to your email or Google Drive (if configured)</li>
+            <li>Generate PDF documents from SMS messages</li>
+            <li>Provide customer support</li>
+            <li>Send you updates and notifications about the App</li>
+            <li>Detect and prevent fraud or abuse</li>
+            <li>Comply with legal obligations</li>
+        </ol>
+
+        <h2>Data Security</h2>
+        <p>We implement appropriate technical and organizational security measures to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee absolute security.</p>
+
+        <h2>Data Retention</h2>
+        <ul>
+            <li><strong>SMS Data:</strong> SMS data stored in Firebase is retained until you delete your account or delete the data manually through the App.</li>
+            <li><strong>User Account Data:</strong> User account information is retained until you delete your account.</li>
+            <li><strong>Local Data:</strong> Data stored locally on your device (images, PDFs) remains on your device until you delete it.</li>
+        </ul>
+
+        <h2>Your Rights and Choices</h2>
+        <p>You have the following rights regarding your personal information:</p>
+        <ol>
+            <li><strong>Access:</strong> You can access your personal information through the App settings.</li>
+            <li><strong>Deletion:</strong> You can delete your account and all associated data by contacting us via email. See our Account Deletion page for detailed instructions.</li>
+            <li><strong>Permission Control:</strong> You can revoke SMS, camera, or storage permissions at any time through your device settings. Note that revoking permissions may limit app functionality.</li>
+            <li><strong>Data Export:</strong> You can request a copy of your data by contacting us.</li>
+            <li><strong>Opt-Out:</strong> You can opt-out of certain data collection by adjusting your device permissions or app settings.</li>
+        </ol>
+
+        <h2>Children's Privacy</h2>
+        <p><strong>Our App is NOT intended for children under the age of 13.</strong> We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately. If we discover that we have collected information from a child under 13, we will delete that information promptly.</p>
+
+        <h2>International Data Transfers</h2>
+        <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that differ from those in your country. By using the App, you consent to the transfer of your information to these countries.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+            <p><strong>Email:</strong> psayantan08@gmail.com</p>
+        
+        </div>
+
+        <div class="sms-declaration">
+            <h2>SMS Permission Declaration</h2>
+            <p><strong>Why we need SMS permission:</strong></p>
+            <ul>
+                <li>To scan SMS messages for receipt and invoice information</li>
+                <li>To extract URLs and receipt data from SMS messages</li>
+                <li>To automatically organize receipts from SMS messages</li>
+            </ul>
+            <p><strong>How SMS data is used:</strong></p>
+            <ul>
+                <li>SMS messages are processed locally on your device</li>
+                <li>SMS data containing receipts is saved to Firebase (associated with your account)</li>
+                <li>SMS receipts can be forwarded to your own email or Google Drive account (only if you configure this)</li>
+                <li>SMS data is NOT shared with third parties except your own configured email/Drive accounts</li>
+            </ul>
+            <p><strong>User control:</strong></p>
+            <ul>
+                <li>You can revoke SMS permissions at any time through device settings</li>
+                <li>You can delete SMS data from Firebase through the App</li>
+                <li>SMS reading is an optional feature - you can use the App without granting SMS permissions</li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;"><strong>By using SMS Receipt Seeker, you agree to the collection and use of information in accordance with this Privacy Policy.</strong></p>
+    </div>
+</body>
+</html>
+
